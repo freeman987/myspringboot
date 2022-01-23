@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "moneyconfig",
+      "type": "com.mygroup.myproject.config.MoneyConfig",
+      "sourceType": "com.mygroup.myproject.config.MoneyConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "moneyconfig.money",
+      "type": "java.math.BigDecimal",
+      "sourceType": "com.mygroup.myproject.config.MoneyConfig"
+    },
+    {
+      "name": "moneyconfig.moneydes",
+      "type": "java.lang.String",
+      "sourceType": "com.mygroup.myproject.config.MoneyConfig"
+    }
+  ],
+  "hints": []
+}

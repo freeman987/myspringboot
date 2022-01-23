@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.mygroup</groupId>
+        <artifactId>myproject</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <artifactId>my-common</artifactId>
+<!--    子模块这里如果不指定groupId，version。这样表示与parent版本号保持一样。-->
+<!--    实在想指定子模块版本，在parent的pom文件里用<dependencyManagement>指定，便于统一管理。-->
+
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+<!--            表示两个项目之间依赖不传递；不设置optional或者optional是false，表示传递依赖。-->
+<!--            不然my-server就无法引用my-common里引用的lombok包了-->
+<!--            <optional>true</optional>-->
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.78</version>
+        </dependency>
+    </dependencies>
+    
+</project>

@@ -1,0 +1,13 @@
+# Application Listeners
+org.springframework.context.ApplicationListener=\
+com.mygroup.myproject.listener.MyListener
+#org.springframework.boot.ClearCachesApplicationListener,
+#org.springframework.boot.builder.ParentContextCloserApplicationListener,
+#org.springframework.boot.context.FileEncodingApplicationListener,
+#org.springframework.boot.context.config.AnsiOutputApplicationListener,
+#org.springframework.boot.context.config.DelegatingApplicationListener,
+#org.springframework.boot.context.logging.LoggingApplicationListener,
+#org.springframework.boot.env.EnvironmentPostProcessorApplicationListener
+
+#org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+#??????????????EnableAutoConfiguration?????springboot?????????????
